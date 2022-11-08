@@ -10,7 +10,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/swift-server/swift-aws-lambda-runtime.git", from: "0.1.0"),
-        .package(url: "https://github.com/akasaaa/HealthPlanetClient.git", from: "0.1.1"),
+        .package(url: "https://github.com/akasaaa/HealthPlanetClient.git", from: "0.1.2"),
     ],
     targets: [
         .target(name: "LambdaHealthPlanetClient", dependencies: [.product(name: "AWSLambdaRuntime", package: "swift-aws-lambda-runtime"),
