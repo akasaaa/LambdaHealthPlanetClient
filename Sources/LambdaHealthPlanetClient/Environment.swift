@@ -12,7 +12,7 @@ func env(_ key: EnvKey) -> String? {
 }
 
 enum EnvKey: String {
-    case healthPlanetClientId = "HEALTH_PLANET_CLIENT_ID"
-    case healthPlanetClientSecret = "HEALTH_PLANET_CLIENT_SECRET"
-    case healthPlanetRefreshToken = "HEALTH_PLANET_REFRESH_TOKEN"
+    case clientId = "CLIENT_ID"
+    case clientSecret = "CLIENT_SECRET"
+    case refreshToken = "REFRESH_TOKEN"
 }

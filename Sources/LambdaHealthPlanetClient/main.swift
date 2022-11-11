@@ -16,9 +16,9 @@ private struct LambdaRequest: Codable {
 private typealias LambdaResponse = InnerScan
 
 private let lambdaCodableClosure: Lambda.CodableClosure<LambdaRequest, LambdaResponse> = { context, request, callback in
-    guard let clientId = env(.healthPlanetClientId),
-          let clientSecret = env(.healthPlanetClientSecret),
-          let refreshToken = env(.healthPlanetRefreshToken) else {
+    guard let clientId = env(.clientId),
+          let clientSecret = env(.clientSecret),
+          let refreshToken = env(.refreshToken) else {
         callback(.failure(Error.withComment("Please check EnvironmentValues.")))
         return
     }
